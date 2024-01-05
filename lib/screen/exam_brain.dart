@@ -6,7 +6,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:quiz_app/screen/resultpage.dart';
+import 'package:quiz_app/screen/result_page.dart';
 import 'package:quiz_app/utils/colors.dart';
 
 

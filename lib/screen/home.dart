@@ -8,14 +8,14 @@ import 'package:quiz_app/data/list_data.dart';
 import 'package:quiz_app/utils/colors.dart';
 
 // ignore: camel_case_types
-class homepage extends StatefulWidget {
-  const homepage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  _homepageState createState() => _homepageState();
+  _HomePageState createState() => _HomePageState();
 }
 // ignore: camel_case_types
-class _homepageState extends State<homepage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([

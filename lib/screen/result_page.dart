@@ -111,7 +111,7 @@ late  String image;
                     TextButton(
                       onPressed: (){
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const homepage(),
+                          builder: (context) => const HomePage(),
                         ));
                         isPalying = false;
                         if(!isPalying){

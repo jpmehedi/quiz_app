@@ -31,7 +31,7 @@ class Customcard extends StatelessWidget {
             // in changelog 1 we will pass the langname name to ther other widget class
             // this name will be used to open a particular JSON file 
             // for a particular language
-            builder: (context) => getjson(langname),
+            builder: (context) => GetData(langname),
           ));
           box.write(Keys.lanName, langname);
           print(box.read(Keys.lanName));

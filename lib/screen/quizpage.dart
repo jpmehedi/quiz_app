@@ -5,20 +5,21 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:quiz_app/screen/quiz_bren.dart';
+import 'package:quiz_app/screen/quiz_brain.dart';
 
 
-class getjson extends StatefulWidget {
+
+class GetData extends StatefulWidget {
   // accept the langname as a parameter
 
   late String? langname;
-  getjson(this.langname, {Key? key}) : super(key: key);
+  GetData(this.langname, {Key? key}) : super(key: key);
 
   @override
-  State<getjson> createState() => _getjsonState();
+  State<GetData> createState() => _GetDataState();
 }
 
-class _getjsonState extends State<getjson> {
+class _GetDataState extends State<GetData> {
  late String assettoload;
  final box = GetStorage();
 
@@ -51,7 +52,7 @@ class _getjsonState extends State<getjson> {
       builder: (context, snapshot) {
         if(snapshot.hasData){
           List? mydata = json.decode(snapshot.data.toString());
-          return  quizBren(mydata: mydata ?? [] );
+          return  QuizBrain(mydata: mydata ?? [] );
         }else if(snapshot.hasError){
           Navigator.canPop(context);
     

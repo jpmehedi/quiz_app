@@ -6,22 +6,22 @@ import 'package:quiz_app/screen/home.dart';
 import 'package:quiz_app/utils/colors.dart';
 
 // ignore: camel_case_types
-class splashscreen extends StatefulWidget {
-  const splashscreen({Key? key}) : super(key: key);
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  _splashscreenState createState() => _splashscreenState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
 // ignore: camel_case_types
-class _splashscreenState extends State<splashscreen> {
+class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState(){
     super.initState();
     Timer(const Duration(seconds: 3), (){
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => homepage(),
+        builder: (context) => HomePage(),
       ));
     });
   }

@@ -7,20 +7,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:quiz_app/screen/home.dart';
-import 'package:quiz_app/screen/resultpage.dart';
+import 'package:quiz_app/screen/result_page.dart';
 import 'package:quiz_app/utils/colors.dart';
 
 
 // ignore: camel_case_types
-class quizBren extends StatefulWidget {
+class QuizBrain extends StatefulWidget {
   final List? mydata;
 
-  const quizBren({Key? key, required this.mydata}) : super(key: key);
+  const QuizBrain({Key? key, required this.mydata}) : super(key: key);
   @override
   _quizpageState createState() => _quizpageState(mydata);
 }
 // ignore: camel_case_types
-class _quizpageState extends State<quizBren> {
+class _quizpageState extends State<QuizBrain> {
   final List? mydata;
   _quizpageState(this.mydata);
   final box = GetStorage();
@@ -209,7 +209,7 @@ class _quizpageState extends State<quizBren> {
                 ElevatedButton(
                       onPressed: () {
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => homepage(),
+                            builder: (context) => HomePage(),
                         ));
                         canceltimer = true;
                       },
@@ -240,7 +240,7 @@ class _quizpageState extends State<quizBren> {
           leading: IconButton(
             onPressed: (){
                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => homepage(),
+                            builder: (context) => HomePage(),
                         ));
               canceltimer = true;
             },
