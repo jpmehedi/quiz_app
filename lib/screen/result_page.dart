@@ -43,6 +43,10 @@ late  String image;
       // ignore: prefer_adjacent_string_concatenation
       message = "You Did Very Well..\n" + "You Scored $marks";
     }
+    Future.delayed(Duration(seconds: 10), () {
+    // Your code
+      controller.stop();
+    });
     super.initState();
   }
 
